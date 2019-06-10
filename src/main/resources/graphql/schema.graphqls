@@ -1,0 +1,13 @@
+type Comment {
+    id: ID!
+    content: String
+}
+
+type Mutation {
+    saveComment(content: String!): Comment
+}
+
+type Query {
+    allComments: [Comment]
+    getComment(id: ID!): Comment
+}
