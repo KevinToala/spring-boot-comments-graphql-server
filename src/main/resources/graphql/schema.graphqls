@@ -11,3 +11,7 @@ type Query {
     allComments: [Comment]
     getComment(id: ID!): Comment
 }
+
+type Subscription {
+    onSaveComment: Comment
+}
